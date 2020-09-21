@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        div {
+  background-image: url('grass.png');
+    }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item { 
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+
+        .heading{
+        margin-top:50px; 
+        margin-left: 50px;
+        width: 200px;
+        height: 200px;
+        max-width: 100%; 
+        flex: 0 0 20%;
+        text-align: center;
+        }
+        img{
+            max-width: 100%;
+            min-width: 0%;
+            height: auto;
+        }
+
+    </style>
+
+<script src="libs/howler.js"></script>
+
+    <title>flexy</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="heading">
+    <a onclick="myAudioFunction('a');">
+        <img src="img0.jpg">
+    </a> </div>
+    <div class="heading">
+    <a onclick="myAudioFunction('b');">
+        <img src="img1.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('c');">
+        <img src="img2.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('d');">
+        <img src="img3.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('e');">
+        <img src="img4.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('f');">
+        <img src="img5.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('g');">
+        <img src="img6.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('h');">
+        <img src="img7.jpg">
+    </a></div>
+    <div class="heading">
+    <a onclick="myAudioFunction('i');">
+        <img src="img8.jpg">
+    </a></div>
+
+</div>
+    <script>
+        var aAudio = new Audio('0.mp3');
+        var bAudio = new Audio('1.mp3');
+        var cAudio = new Audio('2.mp3');
+        var dAudio = new Audio('3.mp3');
+        var eAudio = new Audio('4.mp3');
+        var fAudio = new Audio('5.mp3');
+        var gAudio = new Audio('6.mp3');
+        var hAudio = new Audio('7.mp3');
+        var iAudio = new Audio('8.mp3');
+        function myAudioFunction(letter) {
+            if(letter == 'a') {
+                aAudio.play();
+            } else if(letter == 'b') {
+                bAudio.play();
+            }
+            else if(letter == 'c') {
+                cAudio.play();
+            }
+            else if(letter == 'd') {
+                dAudio.play();
+            }
+            else if(letter == 'e') {
+                eAudio.play();
+            }
+            else if(letter == 'f') {
+                fAudio.play();
+            }
+            else if(letter == 'g') {
+                gAudio.play();
+            }
+            else if(letter == 'h') {
+                hAudio.play();
+            }
+            else if(letter == 'i') {
+                iAudio.play();
+            }
+        }
+    </script>
+</body>
+</html>
